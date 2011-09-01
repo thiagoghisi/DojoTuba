@@ -70,7 +70,7 @@ public class TesteCaixaEletronico {
 	@Test (expected = RuntimeException.class)
 	public void sacarCinquentaCinco(){
 		caixa.sacar(55.0);
-		Assert.fail("O Caixa deveria lançar valores que não são multiplos de 10.");
+		Assert.fail("O caixa deveria não permitir (lançar uma exception) valores que não são multiplos de 10!");
 	}
 	
 	@Test
